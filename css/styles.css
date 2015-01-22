@@ -1,3 +1,5 @@
+/*Kristin Skelton "styles.css" 1/21/15*/
+
 
 body {
 	margin: 0;
@@ -6,7 +8,7 @@ body {
 	height: 100%;
 }
 
-/*Newline character for form elements*/
+/* ----------------------- Form Formatting ------------------------ */
 label:before { 
 	content: '\a' '\a'; 
 	white-space: pre; 
@@ -16,6 +18,20 @@ label:before {
 	content: '\a';
 	white-space:pre-line;
 }
+
+form {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#message {
+	width: 95%;
+	height: 100px;
+	vertical-align: top;
+}
+
+
+/* ---------------------- Header formatting ----------------------- */
 
 h1 {
 	color: rgb(154,209,216);
@@ -38,7 +54,7 @@ h5 {
 	margin-top: 0;
 }
 
-/* -----------------Navigation----------------- */
+/* --------------------------- Navigation --------------------------- */
 
 nav {
 	background-color: rgba(160,160,160,.3);
@@ -69,7 +85,7 @@ nav li {
 }
 
 
-/* Navigation for full page navigation*/
+/* ---------------- Navigation for full page navigation -------------- */
 nav.full-page-nav {
 	background-color: rgba(160,160,160,.3);
 }
@@ -81,6 +97,7 @@ nav.full-page-nav {
 }
 
 
+/* ------------------------- Home page formatting --------------------- */
 
 .left {
 	width: 40%;
@@ -90,24 +107,6 @@ nav.full-page-nav {
 	left: 0;
 }
 
-img.pinned-image{
-	/*max-height:100%;*/
-	width:100%;
-	z-index: -1;
-	/*margin-top: 0px;*/
-	/*margin-bottom: -5px;*/
-}
-
-form {
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
-#message {
-	width: 95%;
-	height: 100px;
-	vertical-align: top;
-}
 
 .right {
 	width: 60%;
@@ -119,6 +118,15 @@ form {
 	background-color: rgb(154,209,216);
 }
 
+
+/* ------------------------------ Images --------------------------------*/
+
+img.pinned-image{
+	width:100%;
+	z-index: -1;
+}
+
+
 img.mainImage {
 	width: 95%;
 	height: 95%;
@@ -128,50 +136,10 @@ img.mainImage {
 	margin-bottom: 20px;
 }
 
-.footer {
-	position: absolute;
-	margin-top: 10px;
-}
-
-article {
-	margin-left: 25px;
-	margin-top: 40px;
-}
-
-.blogContainer {
-	margin: 5%;
-	margin-top:100px;
-	background-color: rgba(154,209,216,.5);
-	display: inline-block;
-}
-
-.blogContent {
-	width: 75%;
-	background-color: rgba(154,209,216,1);
-	padding: 10px;
-	float: left;
-}
-
-.blogMenu {
-	margin-left: 80%;
-}
-
-.blogHeader {
-	margin-left: 160px;
-}
-
-.blog-options:before { 
-	content: '\a'; 
-	white-space: pre-line; 
-}
-
 .bottomImage {
 	width: 100%;
 	/*z-index: -1;*/
 }
-
-
-
 
 .woman-on-computer {
 	position: absolute;
@@ -205,8 +173,42 @@ img.featured-tag-image {
 }
 
 
+/* -------------------------- Blog Formatting --------------------------- */
 
-/* ------------------- Resume Styling ---------------------*/
+article {
+	margin-left: 25px;
+	margin-top: 40px;
+}
+
+.blogContainer {
+	margin: 5%;
+	margin-top:100px;
+	background-color: rgba(154,209,216,.5);
+	display: inline-block;
+}
+
+.blogContent {
+	width: 75%;
+	background-color: rgba(154,209,216,1);
+	padding: 10px;
+	float: left;
+}
+
+.blogMenu {
+	margin-left: 80%;
+}
+
+.blogHeader {
+	margin-left: 160px;
+}
+
+.blog-options:before { 
+	content: '\a'; 
+	white-space: pre-line; 
+}
+
+
+/* --------------------------- Resume Styling ---------------------------*/
 
 .resume h2 {
 	font-size: 2em;
@@ -255,7 +257,6 @@ section {
 	border-bottom: thin solid rgb(255,255,255);
 	margin-bottom: 20px;
 }
-
 
 .second-school {
 	margin-top: 50px;
