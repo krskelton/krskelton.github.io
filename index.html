@@ -1,0 +1,71 @@
+<!-- Kristin Skelton 11/12/15 "index.html" 
+This page is the landing page for a personal webpage. It will have navigation to the other pages and will have a form for contacting the owner of the page.
+-->
+
+
+<!DOCTYPE html>
+<html>
+	<!-- The head contains the title of the page and will contain the css link in the stage of the website. -->
+	<head>
+		<title>Kristin Skelton</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- link for the font for the page. This will be used when the css file is added in the second stage of the website. -->
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<!-- The aside is be a sidebar that contains the name, title and contact form. --> 
+		<div class="left">
+			<h1>Kristin Skelton</h1>
+			<h3>Web Developer</h3>
+			
+			<!-- Navigation to the homepage (current page), resume and blog -->
+			<nav>
+				<ul>
+					<li><a href="index.html">home</li>
+					<li><a href="resume.html">resume</a></li>
+					<li><a href="blog.html">blog</a></li>
+				</ul>
+			</nav>
+
+			<!-- Form to contact the owner of the website -->
+			<form>
+				<!-- Email entry -->
+				<label for="email">Email:</label>
+				<input id="email" type="email"/>
+				
+				<!-- Select box if the user would like to subscribe to emails -->
+				<label for="subscribe">Subscribe to emails?</label>
+				<input id="subscribe" type="checkbox" />
+				
+				<!-- Textarea for the user to send a message -->
+				<label for="message">Message:</label>
+				<input id="message" type="textarea"/>
+				
+				<!-- Drop down menu for the user to select the type of work they are interested in -->
+				<label for="option">What type of work are you interested in?</label>
+				<select id="option">
+					<option>Choose one</option>
+					<option>Web Development</option>
+					<option>Graphic Design</option>
+				</select><br/><br/>
+				
+				<!-- Submit button -->
+				<input class="button" type="submit" value="submit">
+			</form>
+
+			<!-- The image will be placed at the bottom of the sidebar -->
+			<img class="pinned-image" src="images/atSymbol3.png" alt="Contact">
+		</div>
+
+		<!-- The right section of the webpage will be a single image -->
+		<div class="right">
+			<div class="woman-on-computer"></div>
+		</div>
+
+		<!-- The footer contains the copyright -->
+		<!-- <footer>&copy 2015 Kristin Skelton</footer> -->
+	</body>
+
+</html>
