@@ -1,5 +1,6 @@
-/*Kristin Skelton "styles.css" 1/21/15
+/*Kristin Skelton "styles.css" 1/29/15
 This is the styling for Kristin Skelton's personal webpage.*/
+
 
 
 body {
@@ -34,6 +35,7 @@ form {
 
 /* ---------------------- Header formatting ----------------------- */
 
+
 h1 {
 	color: rgb(154,209,216);
 	font-size: 2em;
@@ -48,11 +50,35 @@ h3 {
 	color: rgb(160,160,160);
 	margin-left: 15px;
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 h5 {
 	/*color: rgb(160,160,160);*/
 	margin-top: 0;
+}
+
+
+/* ---------------------- Footer formatting ----------------------- */
+
+.fullFooter {
+	position: relative;
+}
+
+.homePageFooter {
+	position: absolute;
+  	bottom: 0px;
+  	left: 0;
+  	color: rgb(255,255,255);
+}
+
+.fullPageFooter {
+	position: absolute;
+  	bottom: 0px;
+  	left: 0;
+  	color: rgb(255,255,255);
+  	padding-left: 10px;
+  	padding-bottom: 10px;
 }
 
 /* --------------------------- Navigation --------------------------- */
@@ -127,6 +153,11 @@ img.pinned-image{
 	z-index: -1;
 }
 
+img.fullPage-pinned-image{
+	width:100%;
+	z-index: -1;
+}
+
 
 img.mainImage {
 	width: 95%;
@@ -137,10 +168,6 @@ img.mainImage {
 	margin-bottom: 20px;
 }
 
-.bottomImage {
-	width: 100%;
-	/*z-index: -1;*/
-}
 
 .woman-on-computer {
 	position: absolute;
@@ -165,13 +192,25 @@ img.featured-tag-image {
 
 }
 
-@media (min-height: 400px) {
   .pinned-image {
   	position: absolute;
   	bottom: 0;
   	left: 0;
+  	width: 100%;
   }
-}
+
+   .fullPage-pinned-image {
+  	position: relative;
+  	bottom: 0;
+  	left: 0;
+  	width: 100%;
+  }
+
+  .icon, .educationIcon {
+  	display: inline-block;
+  	float: right;
+  }
+
 
 
 /* -------------------------- Blog Formatting --------------------------- */
@@ -228,6 +267,7 @@ article {
 	background-color: rgba(154,209,216,.5);
 	margin: 5%;
 	padding: 20px;
+	height: 100%;
 }
 
 .timeframe, .graduation-date {
@@ -263,6 +303,47 @@ section {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+
+
+.push {
+	height: 100px;
+}
+
+
+
+/* --------------------------- Sliding Hidden Section ---------------------*/
+
+
+
+.hidden {
+    overflow: hidden;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.show {
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    max-height: 1000px;
+    overflow: hidden;
+}
+
 
 
 
